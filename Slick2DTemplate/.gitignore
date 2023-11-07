@@ -1,0 +1,6 @@
+.idea/
+*.iml
+out/
+testdata/
+lib/
+native/
