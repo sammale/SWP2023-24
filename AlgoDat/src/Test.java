@@ -1,15 +1,25 @@
-// Main.java
 public class Test {
     public static void main(String[] args) {
-        int[] array = {64, 34, 700, 12, 22, 11, 90};
+        int[] arrayBubbleSort = {64, 34, 700, 12, 22, 11, 90};
+        int[] arraySelectionSort = {64, 34, 700, 12, 22, 11, 90};
 
         // Use the BubbleSort class
-        Sortable sortable = new BubbleSort();
-        sortable.sort(array);
+        Sortable bubbleSortable = new BubbleSort();
+        bubbleSortable.sort(arrayBubbleSort);
 
-        // Print the sorted array
-        System.out.println("Sorted array:");
-        for (int num : array) {
+        // Print the sorted array for Bubble Sort
+        System.out.println("Sorted array using Bubble Sort:");
+        for (int num : arrayBubbleSort) {
+            System.out.print(num + " ");
+        }
+
+        // Use the SelectionSort class
+        Sortable selectionSortable = new SelectionSort();
+        selectionSortable.sort(arraySelectionSort);
+
+        // Print the sorted array for Selection Sort
+        System.out.println("\nSorted array using Selection Sort:");
+        for (int num : arraySelectionSort) {
             System.out.print(num + " ");
         }
     }
